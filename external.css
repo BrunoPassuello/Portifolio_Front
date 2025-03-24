@@ -16,6 +16,8 @@ header {
     img {
         max-width: 100%; /* Faz a imagem se ajustar ao tamanho do contêiner */
         height: auto;    /* Mantém a proporção */
+        border: 3px solid black;
+        border-radius: 15px; /* Arredonda as bordas */
     }
 
 body {
