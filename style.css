@@ -2,25 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
 
 p {
-    /*width: 500px;
-    background-color: blueviolet;*/
-
     color: black;
     font-size: 20px;
     }
-
+.p_a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
 header {
     background-color: #8da573;
     padding: 10px;
     text-align: center;
-    /*border-bottom: 2px solid #000000;*/
     }
 
     img {
-        max-width: 100%; /* Faz a imagem se ajustar ao tamanho do contêiner */
-        height: auto;    /* Mantém a proporção */
-        /*border: 3px solid black;*/
-        border-radius: 15px; /* Arredonda as bordas */
+        max-width: 100%; 
+        height: auto;   
+        border-radius: 15px; 
     }
 
 body {
@@ -38,19 +37,19 @@ h1 {
 a {
     font-weight: bold;
     text-decoration: none;
-    color: #007bff; /* Mantém a cor do link */
+    color: #007bff; 
     }
 
     .arredondado {
-        background-color: #ffffff; /* Fundo branco */
-        color: #2e7d32; /* Verde escuro (cor do texto) */
-        border-radius: 20px; /* Bordas arredondadas */
-        border: 2px solid #2e7d32; /* Borda verde */
-        padding: 12px 20px; /* Mais espaçamento interno */
+        background-color: #ffffff; 
+        color: #2e7d32; 
+        border-radius: 20px; 
+        border: 2px solid #2e7d32; 
+        padding: 12px 20px; 
         margin: 10px;
         margin-right: 8px;
         box-sizing: border-box;
-        width: 160px; /* Tamanho fixo */
+        width: 200px; 
         text-align: center;
         display: inline-block;
         font-size: 16px;
@@ -60,14 +59,14 @@ a {
         transition: 0.3s ease-in-out;
         cursor: pointer;
         text-decoration: none;
-        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
         vertical-align: middle;
     }
     
     /* Efeito ao passar o mouse */
     .arredondado:hover {
-        background-color: #2e7d32; /* Verde escuro no hover */
-        color: white; /* Texto branco no hover */
+        background-color: #2e7d32; 
+        color: white; 
         transform: scale(1.05);
         box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
     }
@@ -83,9 +82,10 @@ a {
 .importante {font-weight: bold;}
 
 .container {
-    display: flex; /* Ativa o Flexbox */
-    height: 110vh; /* Ocupa a altura inteira da tela */
-}
+    display: flex; 
+    height: 110vh; /* "vh" é uma unidade de medida relativa à altura da tela -> tamanho do verde de fundo */
+    }
+
 
 .sidebar {
     width: 30%; /* Define 30% para o aside */
@@ -101,7 +101,7 @@ a {
 }
 
 .texto_sidebar {
-    width: 30%; /* Define 30% para o aside */
+    width: 30%; /* texto no aside */
 }
 
 .logo {
@@ -113,20 +113,24 @@ a {
 /* Media Query para telas menores que 768px (Tablets e Celulares) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Empilha os elementos */
+        flex-direction: column; 
         height: auto;
     }
 
     .sidebar, .content {
-        width: 100%; /* Ocupam toda a largura */
-        border-right: none; /* Remove a borda lateral */
-        /*border-bottom: 2px solid #000;  Adiciona uma separação visual */
+        width: 100%; 
+        border-right: none; 
     }
 
     .arredondado {
-        width: 100%; /* Botões ocupam toda a largura */
-        display: block; /* Empilha os links */
+        width: 100%; 
+        display: block; 
         text-align: center;
+    }
+
+    .card {
+        width: 90%; 
+        min-height: auto; 
     }
 }
 
@@ -134,46 +138,45 @@ a {
 /* Media Query para telas menores que 480px (Celulares pequenos) */
 @media (max-width: 480px) {
     header {
-        padding: 5px; /* Reduz o espaço no cabeçalho */
+        padding: 5px; 
     }
 
     .sidebar img {
-        width: 80px; /* Reduz a foto de perfil */
+        width: 80px; 
         height: auto;
     }
 
     p {
-        font-size: 18px; /* Diminui um pouco o tamanho do texto */
+        font-size: 18px; 
     }
 }
 
 
 /*ADRESS:*/
 address {
-    font-style: normal; /* Remove o estilo itálico padrão */
-    background-color: #8da573; /* Cor de fundo suave */
-    border: 1px solid #ddd; /* Borda suave ao redor */
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
-    /*max-width: 600px;  Largura máxima para o endereço */
-    /*margin: 0 auto;  Centraliza o conteúdo */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+    
+    font-family: 'Inter', sans-serif;
+    background-color: #8da573; 
+    border: 1px solid #ddd; 
+    padding: 18px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.5; 
 }
 
 address a {
-    color: #007bff; /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Deixa o link em negrito */
+    color: #007bff; 
+    text-decoration: none; 
+    font-weight: bold; 
 }
 
 address a:hover {
-    color: #0056b3; /* Cor do link ao passar o mouse */
-    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    color: #0056b3; 
+    text-decoration: underline; 
 }
 
 address br {
-    margin-bottom: 8px; /* Adiciona espaçamento entre as quebras de linha */
+    margin-bottom: 8px; 
 }
 
 
@@ -181,7 +184,7 @@ address br {
 /*TABELA DO DICIONARIO*/
 
 #mainDict {
-    width: 100%; /* Define 70% para a div */
+    width: 100%; 
     background: #e5f7d1;
     padding: 20px;
 }
@@ -216,33 +219,32 @@ td:first-child {
 
 .card {
     background: white;
-    padding: 18px; /* Menos padding para economizar espaço */
+    padding: 18px; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 280px; /* Um pouco menor */
-    max-height: 150px; /* Define um limite menor para a altura */
+    width: 300px; 
+    max-height: 170px; 
     text-align: left;
     transition: 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;  Centraliza melhor o conteúdo */
-    align-items: flex-start; /* Evita esticamento */
-    overflow: hidden; /* Garante que não cresça demais */
+    align-items: flex-start; 
+    overflow: hidden; 
     justify-content: space-between;
 }
 
 .card h2 {
-    font-size: 16px; /* Reduz tamanho do título */
+    font-size: 20px; 
     margin-bottom: 5px;
 }
 
 .card p {
-    font-size: 12px; /* Texto menor para compactar mais */
+    font-size: 15px;
     margin: 2px 0;
 }
 
 .card a {
-    font-size: 12px; /* Link menor */
+    font-size: 15px; 
     padding: 5px 10px;
 }
 
@@ -252,11 +254,4 @@ td:first-child {
 
 .card a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .card {
-        width: 90%; /* Faz os cards ocuparem mais espaço em telas pequenas */
-        min-height: auto; /* Remove altura fixa para melhor adaptação */
-    }
 }
