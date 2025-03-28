@@ -1,0 +1,262 @@
+/* Adicionando Inter via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+p {
+    /*width: 500px;
+    background-color: blueviolet;*/
+
+    color: black;
+    font-size: 20px;
+    }
+
+header {
+    background-color: #8da573;
+    padding: 10px;
+    text-align: center;
+    /*border-bottom: 2px solid #000000;*/
+    }
+
+    img {
+        max-width: 100%; /* Faz a imagem se ajustar ao tamanho do contêiner */
+        height: auto;    /* Mantém a proporção */
+        /*border: 3px solid black;*/
+        border-radius: 15px; /* Arredonda as bordas */
+    }
+
+body {
+    margin: 0px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    }
+    
+h1 {
+    color: black;
+    font-size: 40px;
+    margin-top: 20px;
+    }
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff; /* Mantém a cor do link */
+    }
+
+    .arredondado {
+        background-color: #ffffff; /* Fundo branco */
+        color: #2e7d32; /* Verde escuro (cor do texto) */
+        border-radius: 20px; /* Bordas arredondadas */
+        border: 2px solid #2e7d32; /* Borda verde */
+        padding: 12px 20px; /* Mais espaçamento interno */
+        margin: 10px;
+        margin-right: 8px;
+        box-sizing: border-box;
+        width: 160px; /* Tamanho fixo */
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        vertical-align: middle;
+    }
+    
+    /* Efeito ao passar o mouse */
+    .arredondado:hover {
+        background-color: #2e7d32; /* Verde escuro no hover */
+        color: white; /* Texto branco no hover */
+        transform: scale(1.05);
+        box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Efeito ao clicar */
+    .arredondado:active {
+        transform: scale(0.98);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+
+.importante {font-weight: bold;}
+
+.container {
+    display: flex; /* Ativa o Flexbox */
+    height: 110vh; /* Ocupa a altura inteira da tela */
+}
+
+.sidebar {
+    width: 30%; /* Define 30% para o aside */
+    background: #CFE0BC;
+    padding: 20px;
+    border-right: 2px solid #000000;
+}
+
+.content {
+    width: 70%; /* Define 70% para a div */
+    background: #e5f7d1;
+    padding: 20px;
+}
+
+.texto_sidebar {
+    width: 30%; /* Define 30% para o aside */
+}
+
+.logo {
+    height: 62px;
+    width: 150px
+}
+
+
+/* Media Query para telas menores que 768px (Tablets e Celulares) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos */
+        height: auto;
+    }
+
+    .sidebar, .content {
+        width: 100%; /* Ocupam toda a largura */
+        border-right: none; /* Remove a borda lateral */
+        /*border-bottom: 2px solid #000;  Adiciona uma separação visual */
+    }
+
+    .arredondado {
+        width: 100%; /* Botões ocupam toda a largura */
+        display: block; /* Empilha os links */
+        text-align: center;
+    }
+}
+
+
+/* Media Query para telas menores que 480px (Celulares pequenos) */
+@media (max-width: 480px) {
+    header {
+        padding: 5px; /* Reduz o espaço no cabeçalho */
+    }
+
+    .sidebar img {
+        width: 80px; /* Reduz a foto de perfil */
+        height: auto;
+    }
+
+    p {
+        font-size: 18px; /* Diminui um pouco o tamanho do texto */
+    }
+}
+
+
+/*ADRESS:*/
+address {
+    font-style: normal; /* Remove o estilo itálico padrão */
+    background-color: #8da573; /* Cor de fundo suave */
+    border: 1px solid #ddd; /* Borda suave ao redor */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    /*max-width: 600px;  Largura máxima para o endereço */
+    /*margin: 0 auto;  Centraliza o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    line-height: 1.5; /* Aumenta o espaçamento entre as linhas */
+}
+
+address a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o link em negrito */
+}
+
+address a:hover {
+    color: #0056b3; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+
+address br {
+    margin-bottom: 8px; /* Adiciona espaçamento entre as quebras de linha */
+}
+
+
+
+/*TABELA DO DICIONARIO*/
+
+#mainDict {
+    width: 100%; /* Define 70% para a div */
+    background: #e5f7d1;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #2e7d32;
+    color: white;
+}
+td:first-child {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+
+
+/*CERTIFICADOS*/
+#div_certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 18px; /* Menos padding para economizar espaço */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 280px; /* Um pouco menor */
+    max-height: 150px; /* Define um limite menor para a altura */
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;  Centraliza melhor o conteúdo */
+    align-items: flex-start; /* Evita esticamento */
+    overflow: hidden; /* Garante que não cresça demais */
+    justify-content: space-between;
+}
+
+.card h2 {
+    font-size: 16px; /* Reduz tamanho do título */
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 12px; /* Texto menor para compactar mais */
+    margin: 2px 0;
+}
+
+.card a {
+    font-size: 12px; /* Link menor */
+    padding: 5px 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Faz os cards ocuparem mais espaço em telas pequenas */
+        min-height: auto; /* Remove altura fixa para melhor adaptação */
+    }
+}

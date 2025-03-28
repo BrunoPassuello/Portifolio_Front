@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados e Cursos</title>
+    <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><i class="fas fa-certificate"></i> Certificados & Cursos</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2><i class="fas fa-code"></i> Curso de HTML e CSS</h2>
+            <p>Plataforma: Udemy</p>
+            <p>Duração: 20h</p>
+            <a href="certificados/html-css.pdf" target="_blank">Ver Certificado</a>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-laptop-code"></i> Desenvolvimento Web Completo</h2>
+            <p>Plataforma: Alura</p>
+            <p>Duração: 40h</p>
+            <a href="certificados/web-completo.pdf" target="_blank">Ver Certificado</a>
+        </div>
+
+        <div class="card">
+            <h2><i class="fas fa-database"></i> Banco de Dados SQL</h2>
+            <p>Plataforma: Coursera</p>
+            <p>Duração: 25h</p>
+            <a href="certificados/sql.pdf" target="_blank">Ver Certificado</a>
+        </div>
+    </div>
+
+</body>
+</html>
